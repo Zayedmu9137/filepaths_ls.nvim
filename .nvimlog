@@ -1,0 +1,5 @@
+WRN 2026-03-10T19:23:38.260 ?.58551    server_start:199: Failed to start server: operation not permitted: /var/folders/k0/31b_zcnx22qfnlj41k3s_0y40000gn/T/nvim.antonk52/7VKBwP/nvim.58551.0
+WRN 2026-03-10T19:23:38.264 ?.58550    server_start:199: Failed to start server: operation not permitted: /var/folders/k0/31b_zcnx22qfnlj41k3s_0y40000gn/T/nvim.antonk52/Z2d7Hx/nvim.58550.0
+WRN 2026-03-10T19:23:38.341 ?.58552    server_start:199: Failed to start server: operation not permitted: /var/folders/k0/31b_zcnx22qfnlj41k3s_0y40000gn/T/nvim.antonk52/bo6rAa/nvim.58552.0
+WRN 2026-03-10T20:16:11.367 ?.59716    server_start:199: Failed to start server: operation not permitted: /var/folders/k0/31b_zcnx22qfnlj41k3s_0y40000gn/T/nvim.antonk52/zz0JLT/nvim.59716.0
+WRN 2026-03-10T20:16:14.609 ?.59718    server_start:199: Failed to start server: operation not permitted: /var/folders/k0/31b_zcnx22qfnlj41k3s_0y40000gn/T/nvim.antonk52/cIhV8z/nvim.59718.0

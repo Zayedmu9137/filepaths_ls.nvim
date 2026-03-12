@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "runtime.version": "LuaJIT",
+  "runtime.path": [
+    "lua/?.lua",
+    "lua/?/init.lua"
+  ],
+  "diagnostics.globals": ["vim"],
+  "diagnostics.unusedLocalExclude": ["_*"],
+  "workspace.checkThirdParty": false,
+  "workspace.library": [
+    "$VIMRUNTIME",
+    "lua",
+    "nvim-test",
+    // TODO remove after 0.12 update
+    "${3rd}/luv/library",
+    "${3rd}/busted/library"
+  ],
+  "diagnostics.libraryFiles": "Opened",
+  "completion.callSnippet": "Replace",
+  "semantic.enable": true,
+  "semantic.annotation": true,
+  "semantic.keyword": false,
+  "semantic.variable": false
+}
