@@ -14,6 +14,15 @@ In-process filepath completion for Neovim's built-in LSP client.
     - Symlink target and broken symlink detection
     - Content preview
 
+| Demo | Preview |
+|--- | --- |
+| File & tilde `~` expansion | <img width="400" src="https://github.com/user-attachments/assets/2036ccae-eecf-4f4e-91ab-4203b3cbf1a8" /> |
+| Symlink | <img width="400" src="https://github.com/user-attachments/assets/9ab4e28f-0f11-456a-ae76-759faaca24b2" /> |
+| Broken Symlink | <img width="400" src="https://github.com/user-attachments/assets/a64c555e-f6cd-4f62-b2cf-cb0136c7c512" /> |
+| Environment variable expansion | <img width="400" src="https://github.com/user-attachments/assets/9c0e8e0d-d87c-4b0b-a83e-91656e51888b" /> |
+
+Demo uses [mini.completion](https://github.com/nvim-mini/mini.completion) plugin.
+
 ## When To Use It
 
 Use this if you want filepath completion through Neovim's built-in LSP completion or [`mini.completion`](https://github.com/nvim-mini/mini.nvim).
